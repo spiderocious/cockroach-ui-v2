@@ -43,3 +43,6 @@ export const renderComponent = (
   root.render(component);
   return root;
 };
+
+// Export Radix UI integrated components
+export { DialogComponent as Dialog } from './Dialog';
