@@ -1,0 +1,79 @@
+{
+  "name": "@cockroach-ui-v2/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
+  },
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@nx/eslint": "21.3.5",
+    "@nx/eslint-plugin": "21.3.5",
+    "@nx/jest": "21.3.5",
+    "@nx/js": "^21.3.5",
+    "@nx/playwright": "21.3.5",
+    "@nx/react": "21.3.5",
+    "@nx/vite": "21.3.5",
+    "@nx/web": "21.3.5",
+    "@nx/workspace": "21.3.5",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "@vitest/ui": "^3.0.0",
+    "ajv": "^8.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "jest": "^30.0.2",
+    "jest-environment-node": "^30.0.2",
+    "jest-util": "^30.0.2",
+    "jiti": "2.4.2",
+    "jsdom": "^26.1.0",
+    "jsonc-eslint-parser": "^2.1.0",
+    "lint-staged": "^16.1.2",
+    "nx": "21.3.5",
+    "postcss": "^8.5.6",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^4.1.11",
+    "ts-jest": "^29.4.0",
+    "ts-node": "10.9.1",
+    "tslib": "^2.3.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.0.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

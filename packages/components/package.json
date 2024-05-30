@@ -1,0 +1,19 @@
+{
+  "name": "@cockroach-ui/components",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "@cockroach-ui/tokens": "*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
