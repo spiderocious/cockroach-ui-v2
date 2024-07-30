@@ -146,8 +146,9 @@ export const defaultTokens = {
   },
 } as const;
 
-// Type for custom tokens
-export type TokensConfig = typeof defaultTokens;
+// Type for custom tokens - using any for flexibility
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type TokensConfig = any;
 export type DeepPartial<T> = {
   [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
 };

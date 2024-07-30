@@ -9,7 +9,7 @@ export function generateCSSVariables(): string {
 
   // Generate color variables
   Object.entries(tokens.colors).forEach(([colorName, colorScale]) => {
-    if (typeof colorScale === 'object') {
+    if (typeof colorScale === 'object' && colorScale !== null) {
       Object.entries(colorScale).forEach(([shade, value]) => {
         css += `  --color-${colorName}-${shade}: ${value};\n`;
       });
